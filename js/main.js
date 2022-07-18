@@ -31,6 +31,8 @@ const membroTeam = [
     },
     
 ]
+console.log(membroTeam);
+document.getElementById('prova-stampa').innerHTML =  JSON.stringify(membroTeam);
 
 
 
@@ -38,4 +40,8 @@ for (let chiave in membroTeam){
     console.log(membroTeam[chiave].nome);
     console.log(membroTeam[chiave].ruolo);
     console.log(membroTeam[chiave].immagine);
+
+    
 }
+//document.getElementById('prova-stampa').innerHTML = membroTeam[0].nome;
+//document.getElementById('prova-stampa').innerHTML = membroTeam[0].ruolo;

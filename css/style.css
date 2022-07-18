@@ -11,8 +11,11 @@
 
 #cards{
     width: calc(90% / 3);
+    height: 100px;
     background-color: #fff;
     text-align: center;
+    margin: 10px;
+
 }
 
 .image{
