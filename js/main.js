@@ -32,16 +32,26 @@ const membroTeam = [
     
 ]
 console.log(membroTeam);
-document.getElementById('prova-stampa').innerHTML =  JSON.stringify(membroTeam);
+
+const teamWrapDom = document.querySelector('.team-wrap');
 
 
+for (let i = 0; i < membroTeam.length; i++) {
+    console.log(membroTeam[i].nome);
+    console.log(membroTeam[i].ruolo);
+    console.log(membroTeam[i].immagine);
 
-for (let chiave in membroTeam){
-    console.log(membroTeam[chiave].nome);
-    console.log(membroTeam[chiave].ruolo);
-    console.log(membroTeam[chiave].immagine);
-
+    drawTeamMember(membroTeam[i]);
     
 }
 //document.getElementById('prova-stampa').innerHTML = membroTeam[0].nome;
 //document.getElementById('prova-stampa').innerHTML = membroTeam[0].ruolo;
+
+function drawTeamMember (teamMember){
+
+    teamWrapDom.innerHTML += `<div class="cards">
+    <img src="./img/${teamMember.immagine}" alt="${teamMember.immagine}"/>
+    <h2>${teamMember.nome}</h2>
+    <p>${teamMember.ruolo}</p>;
+    </div>`;
+}

@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-#main-section{
+.team-wrap{
     display: flex;
     flex-wrap: wrap;
 }
 
-#cards{
+.cards{
     width: calc(90% / 3);
     height: 100px;
     background-color: #fff;
